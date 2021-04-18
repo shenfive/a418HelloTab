@@ -20,6 +20,7 @@ class ViewController: UIViewController {
             formater.locale = Locale.init(identifier: "zh-hant")
             let dateString = formater.string(from: date)
             displayLabel.text = dateString
+            //
         }
     }
     @IBAction func dateSelect(_ sender: UIDatePicker) {
