@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         if let date  =  value as? Date{
             let formater = DateFormatter()
             formater.dateFormat = "yyyy-MM-dd a hh:mm:ss"
-            formater.locale = Locale.init(identifier: "zh-tw")
+            formater.locale = Locale.init(identifier: "zh-hant")
             let dateString = formater.string(from: date)
             displayLabel.text = dateString
         }
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         def.synchronize()
         let formater = DateFormatter()
         formater.dateFormat = "yyyy-MM-dd a hh:mm:ss"
-        formater.locale = Locale.init(identifier: "zh-tw")
+        formater.locale = Locale.init(identifier: "zh-hant")
         let dateString = formater.string(from: dateSelected)
         
         displayLabel.text = dateString
